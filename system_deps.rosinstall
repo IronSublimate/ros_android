@@ -28,8 +28,8 @@
     version: curl-7.47.0
 - tar:
     local-name: eigen
-    uri: https://bitbucket.org/eigen/eigen/get/3.3.5.tar.gz
-    version: eigen-eigen-b3f3d4950030
+    uri: http://gitlab.com/libeigen/eigen/-/archive/3.3.5/eigen-3.3.5.tar.gz
+    version: eigen-3.3.5
 - git:
     local-name: flann
     uri: https://github.com/chadrockey/flann_cmake.git
@@ -69,7 +69,7 @@
 - tar:
     local-name: sdl-image
     uri: http://hg.libsdl.org/SDL_image/archive/d46c630f2cd6.tar.gz
-    version: SDL_image-d46c630f2cd6
+    version: SDL_image-220be3fd43a85921138072ed847b7e4bc5ad163e
 - tar:
     local-name: theora
     uri: http://downloads.xiph.org/releases/theora/libtheora-1.1.1.tar.bz2
