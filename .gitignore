@@ -7,3 +7,4 @@ files/pluginlib_helper/pluginlib_helper.cpp
 **/.catkin_tools
 **/devel/*
 **/logs/*
+/install

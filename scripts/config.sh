@@ -2,7 +2,7 @@
 # Always source this file before using the scripts.
 
 # Configure the Android NDK and toolchain
-export ANDROID_ABI=arm64-v8a
+export ANDROID_ABI=x86_64
 export ANDROID_STL=c++_static       # or c++_shared, see https://developer.android.com/ndk/guides/cpp-support
 export ANDROID_PLATFORM=android-24
 

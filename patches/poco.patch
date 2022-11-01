@@ -148,7 +148,7 @@
 +} // namespace Poco
 --- /dev/null
 +++ libs/poco/build/config/Android_static
-@@ -0,0 +1,91 @@
+@@ -0,0 +1,96 @@
 +#
 +# $Id: //poco/1.4/build/config/Android#3 $
 +#
@@ -178,7 +178,12 @@
 +TOOL      = i686-linux-android
 +ARCHFLAGS = -march=i686 -msse3 -mstackrealign -mfpmath=sse
 +else
++ifeq ($(ANDROID_ABI),x86_64)
++TOOL      = x86_64-linux-android
++ARCHFLAGS = -march=x86-64 -msse3 -mstackrealign -mfpmath=sse
++else
 +$(error Invalid ABI specified in ANDROID_ABI)
++endif
 +endif
 +endif
 +endif

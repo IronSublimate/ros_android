@@ -31,6 +31,12 @@ if [ "armeabi-v7a" = $ANDROID_ABI ]; then
     arch="arm"
 elif [ "arm64-v8a" = $ANDROID_ABI ]; then
     arch="arm64"
+elif [ "x86" = $ANDROID_ABI ]; then
+    arch="x86"
+elif [ "x86_64" = $ANDROID_ABI ]; then
+    arch="x86_64"
+else
+    arch=$ANDROID_ABI
 fi
 
 if [ ! -d toolchain/ ]; then
